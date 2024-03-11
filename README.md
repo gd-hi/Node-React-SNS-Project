@@ -26,6 +26,9 @@
 
 ![image](https://github.com/gd-hi/Node-React-SNS-Project/assets/148930703/7900b7a4-1aaf-4776-bbee-056874e7b1bc)
 
+![image](https://github.com/gd-hi/Node-React-SNS-Project/assets/148930703/543093fd-2818-46dc-aaba-d9c24a028af6)
+
+
 ![image](https://github.com/gd-hi/Node-React-SNS-Project/assets/148930703/cdbea743-3273-46b2-88d9-263214a2ad80)
 
 ![image](https://github.com/gd-hi/Node-React-SNS-Project/assets/148930703/0dc6f4a3-5e8f-4787-ba1d-ff52b9bea5cb)

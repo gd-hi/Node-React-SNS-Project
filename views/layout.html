@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-wrap">
+        <div class="header">
+          <a href="/">
+        <img src="/logo.png" height="30px" width="160px" class="logo"> 
+        </a>  
+        </div>
+        </div>   
+        {% if user %}
+        <div class="row-wrap">
+          {% if user and user.id %}
+          <div class="profile">
+        {% endif %}
+            <div class="user-name">{{'안녕하세요! ' + user.nick + '님'}}</div>
+            <div class="half">
+              <div>팔로잉</div>
+              <a href="/following" class="count following-count">{{followingCount}}</a>
+            </div>
+            <div class="half">
+              <div>팔로워</div>
+              <a href="/follower" class="count follower-count">{{followerCount}}</a>
+            </div>
+          <input id="my-id" type="hidden" value="{{user.id}}">
+          <a id="my-profile" href="/about" class="btn">ABOUT</a>
+          <a id="logout" href="/auth/logout" class="btn">LOGOUT</a>
+        </div>
+        {% endif %}
+        {% block content %}
+        {% endblock %}
+      </div>
+      </div>
+        <footer>
+          <h4>Node SNS</h4>
+        </footer>
+
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      window.onload = () => {
+        if (new URL(location.href).searchParams.get('error')) {
+          alert(new URL(location.href).searchParams.get('error'));
+        }
+      };
+    </script>
+    {% block script %}
+    {% endblock %}
+  </body>
+</html>

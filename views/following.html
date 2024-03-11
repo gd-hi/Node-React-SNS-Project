@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="followings list">
+      <h2>팔로잉 목록</h2>
+      {% if user.Followings %}
+        {% for following in user.Followings %}
+          <div>{{following.nick}}</div>
+          {% endfor %}
+          {% else %}
+          <div>팔로잉한 사람이 없습니다.</div>
+      {% endif %}
+    </div>
+{% endblock %}

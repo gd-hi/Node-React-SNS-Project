@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="followers list">
+    <h2>팔로워 목록</h2>
+    {% if user.Followers %}
+      {% for follower in user.Followers %}
+        <div>{{follower.nick}}</div>
+      {% endfor %}
+      
+      {% else %}
+      <div>팔로워한 사람이 없습니다.</div>
+    {% endif %}
+  </div>
+  {% endblock %}

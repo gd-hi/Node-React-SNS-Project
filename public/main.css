@@ -1,0 +1,194 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+.btn {
+  display: inline-block;
+  padding: 0 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: black;
+  border: 1px solid silver;
+  color: white;
+  height: 37px;
+  line-height: 37px;
+  vertical-align: top;
+  font-size: 12px;
+  padding: 0px 10px;
+}
+table{
+  margin-top: 20px;
+}
+table, th, td{
+  border-top: 1px solid rgb(238,238,238);
+  border-bottom: 1px solid rgb(238,238,238);
+  border-collapse: collapse;
+  padding: 12px 50px;
+  text-align: center;
+}
+#board{
+  display: flex;
+  flex-direction: column;
+}
+.board{
+  display: inline-block;
+  padding: 0 5px;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  padding-right: 20px;
+  line-height: 37px;
+}
+.timeline_join{
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 4px;
+  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.board_top{
+  display: flex;
+  justify-content: end;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 737px;
+}
+
+input[type='text'], input[type='email'], input[type='password'], textarea {
+  border-radius: 4px;
+  height: 37px;
+  padding: 10px;
+  border: 1px solid silver;
+}
+
+.container { width: 100%; height: 100%; }
+@media screen and (min-width: 800px) {
+  .container { width: 800px; margin: 0 auto; }
+  .login-container { width: 300px; margin: 0 auto;}
+}
+.input-group { margin-bottom: 15px; }
+.input-group label { width: 25%; display: inline-block; }
+.input-group input { width: 70%; }
+.half { float: left; width: 50%; margin: 10px 0; }
+#join { float: right; }
+.profile-wrap, .login-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  align-items: center;
+}
+.row-wrap{
+  display: flex;
+  flex-direction: column;
+}
+.login-wrap{
+  flex-direction: column;
+}
+.img{
+  display: flex;
+  justify-content: space-between;
+  width: 710px;
+  align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .profile-wrap { width: 100%; margin-bottom: 0; align-items: center;  }
+  .row-wrap { flex-direction: row;}
+}
+.profile, .profile-login {
+  text-align: left;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  height: 150px;
+  width: 230px;
+}
+.profile-login{
+  width: 300px;
+  height: 170px;
+}
+.user-name { font-weight: bold; font-size: 18px; }
+.count { font-weight: bold; color: crimson; font-size: 18px; text-decoration: none; }
+.timeline {
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 4px;
+  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+@media screen and (min-width: 800px) { #twit-form, .twit{ width: 500px;     margin: 20px 0px;} }
+#twit-form {
+  padding: 10px;
+  background: whitesmoke;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#img-preview { max-width: 100%; }
+#img-label {
+  float: left;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid silver;
+  background-color: white;
+  padding: 0 10px;
+  color: black;
+  font-size: 12px;
+  height: 37px;
+  line-height: 37px;
+}
+#img { display: none; }
+#twit { 
+  width: 100%; 
+  min-height: 72px; 
+  border: none;
+  border-radius: 5px;
+}
+#twit-btn {
+  float: right;
+  color: black;
+  background: white;
+  border: 1px solid silver;
+}
+.twit {
+  border: 1px solid silver;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.twit-author { 
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  width: 100%;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.twit-follow {
+  background: #fff;
+  border: unset;
+  border-radius: 5px;
+  color: black;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: aliceblue;
+  padding: 5px 10px;
+  font-weight: 800;
+}
+.twit-img { text-align: center; }
+.twit-img img { max-width: 100%; }
+.twit-content{ padding: 10px;}
+.error-message { color: red; font-weight: bold; }
+#search-form { text-align: right; }
+#join-form { padding: 10px; text-align: center; }
+#hashtag-form { text-align: right; }
+footer { text-align: center; }
+.logo{ margin: 2% 0%;}
